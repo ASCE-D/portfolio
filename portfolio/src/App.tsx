@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import PortfolioHome from './components/Explore.tsx'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Navbar/>
       <Routes>
        <Route path='/' element={<Home/>}/>
+       <Route path='/explore' element={<PortfolioHome/>}/>
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/about' element={<About/>}/>
      

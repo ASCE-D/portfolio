@@ -1,0 +1,22 @@
+/* In your CSS file */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add this class to your name for highlighting */
+  .text-highlight {
+    color: #ffcc00; /* Use the color code you prefer */
+  }
+  
