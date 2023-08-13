@@ -23,7 +23,7 @@ function PortfolioHome() {
   }, []);
 
   return (
-    <div className={`bg-black h-auto md:min-h-screen flex flex-col items-center justify-center transition-opacity ${animation ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={` h-auto md:min-h-screen flex flex-col items-center justify-center transition-opacity ${animation ? 'opacity-100' : 'opacity-0'}`}>
       <div className="text-center px-4">
         <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">My RDR2-Inspired Portfolio</h1>
         <p className="text-gray-300 text-sm md:text-lg mb-6">Explore my projects inspired by the wild west.</p>
