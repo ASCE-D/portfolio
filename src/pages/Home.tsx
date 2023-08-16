@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className=" h-screen flex items-center justify-center p-12  ">
+    <div className=" h-screen flex items-center justify-center p-12 overflow-hidden ">
       <div className="text-center">
         <h1 className="text-white text-7xl font-semibold mb-6 fadeIn tracking-wide">
           Welcome to My Portfolio

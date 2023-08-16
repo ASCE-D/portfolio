@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     
-    <nav className="bg-black p-4 sticky top-0">
+    <nav className="bg-black p-4 sticky z-[1] top-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-white text-xl font-semibold">My Website</Link>
         <div className="md:hidden">
