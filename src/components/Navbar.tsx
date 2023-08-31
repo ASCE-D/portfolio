@@ -37,8 +37,8 @@ function Navbar() {
           </button>
         </div>
         <ul
-          className={`md:flex space-y-2 md:space-y-0 md:space-x-4 ${
-            isOpen ? 'block' : 'hidden'
+          className={`md:flex  space-y-2 md:space-y-0 md:space-x-4 ${
+            isOpen ? 'text-base block' : 'hidden'
           }`}
         >
           <li><Link to="/" className="text-white hover:text-red-600 ">Home</Link></li>
