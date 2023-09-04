@@ -2,6 +2,8 @@
 
 import  { useEffect, useState } from "react";
 import img1 from "../assets/cyrpto.png";
+import img2 from "../assets/5.png";
+import img3 from "../assets/UrbanMarketplace-logos_white.png";
 import About from "../pages/About";
 
 function PortfolioHome() {
@@ -24,9 +26,16 @@ function PortfolioHome() {
     {
       title: 'Bounty Hunter Tracker',
       description: 'A tracking tool for bounty hunters to locate their targets.',
-      imageUrl: 'path-to-image2.jpg',
+      imageUrl: img3,
       websiteUrl: 'https://urban-marketplace.vercel.app/', // Add your actual website URL here
       repoUrl: 'https://github.com/ASCE-D/UrbanMarketplace',
+    },
+    {
+      title: 'Frontier Explorer',
+      description: 'An interactive map of the wild west showcasing notable locations.',
+      imageUrl: img2,
+      websiteUrl: 'https://videohub-weld.vercel.app/', // Add your actual website URL here
+      repoUrl: 'https://github.com/Ashish2271/my-app',
     },
     // Add more project objects as needed
   ];
