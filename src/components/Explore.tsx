@@ -1,22 +1,32 @@
-import React, { useEffect, useState } from "react";
+
+
+import  { useEffect, useState } from "react";
 import img1 from "../assets/cyrpto.png";
 import About from "../pages/About";
 
 function PortfolioHome() {
   const [animation, setAnimation] = useState(false);
+  
+  const handleImageClick = (url: string) => {
+    window.open(url, "_blank"); // Open the URL in a new tab
+  };
+
+ 
 
   const projects = [
     {
-      title: "Frontier Explorer",
-      description:
-        "An interactive map of the wild west showcasing notable locations.",
+      title: 'Frontier Explorer',
+      description: 'An interactive map of the wild west showcasing notable locations.',
       imageUrl: img1,
+      websiteUrl: 'https://crypto-jade-one.vercel.app', // Add your actual website URL here
+      repoUrl: 'https://github.com/Ashish2271/crypto',
     },
     {
-      title: "Bounty Hunter Tracker",
-      description:
-        "A tracking tool for bounty hunters to locate their targets.",
-      imageUrl: "path-to-image2.jpg",
+      title: 'Bounty Hunter Tracker',
+      description: 'A tracking tool for bounty hunters to locate their targets.',
+      imageUrl: 'path-to-image2.jpg',
+      websiteUrl: 'https://urban-marketplace.vercel.app/', // Add your actual website URL here
+      repoUrl: 'https://github.com/ASCE-D/UrbanMarketplace',
     },
     // Add more project objects as needed
   ];
@@ -47,21 +57,24 @@ function PortfolioHome() {
           }`}
         >
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-900 p-3 md:p-4 rounded-lg shadow-md"
-            >
+            <div key={index} className="bg-gray-900 p-3 md:p-4 rounded-lg shadow-md">
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="mx-auto mb-2 md:mb-3 p-2 md:p-3"
+                className="mx-auto mb-2 md:mb-3 p-2 md:p-3 cursor-pointer"
+                onClick={() => handleImageClick(project.websiteUrl)}
               />
-              <h2 className="text-white text-lg md:text-xl font-semibold mb-1 md:mb-2">
-                {project.title}
-              </h2>
-              <p className="text-gray-300 text-sm md:text-base">
-                {project.description}
-              </p>
+              <h2 className="text-white text-lg md:text-xl font-semibold mb-1 md:mb-2">{project.title}</h2>
+              <p className="text-gray-300 text-sm md:text-base">{project.description}</p>
+
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 rounded inline-block"
+              >
+                View Repository
+              </a>
             </div>
           ))}
         </div>
@@ -71,3 +84,4 @@ function PortfolioHome() {
 }
 
 export default PortfolioHome;
+
