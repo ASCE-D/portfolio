@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import PortfolioHome from "./components/Explore.tsx";
 import Particle from "./components/Particle.tsx";
+import Services from "./pages/Services.tsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/explore" element={<PortfolioHome />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </Router>
     </>
