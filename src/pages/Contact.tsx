@@ -8,7 +8,8 @@ const Contact = () => {
       <div className="md:w-full w-1/2">
         <h2 className="text-md md:text-2xl  mb-4">Contact Information</h2>
         <p className="mb-2 ">
-          <strong>Email:</strong> ashishpandey46209@gmail.com
+          <strong>Email:</strong>
+          <div className="text-red-600 text-md">ashishpandey46209@gmail.com</div> 
         </p>
         <p className="mb-4">
           <strong>LinkedIn:</strong>{' '}
@@ -16,7 +17,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/ash1sh-pandey"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-red-600 hover:underline"
           >
                    my linkedin profile
           </a>
@@ -27,7 +28,7 @@ const Contact = () => {
             href="https://www.instagram.com/gamersenpai69/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-red-600 hover:underline"
           >
             my instagram profile
           </a>
@@ -38,7 +39,7 @@ const Contact = () => {
             href="https://twitter.com/Ashishp7774"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-red-600 hover:underline"
           >
             my twitter profile
           </a>

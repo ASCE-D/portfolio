@@ -121,7 +121,7 @@ function PortfolioHome() {
           href={project.repoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 rounded inline-block"
+          className="mt-2 bg-red-600 hover:bg-yellow-400 text-black py-1 px-2 rounded inline-block"
         >
           View Repository
         </a>
