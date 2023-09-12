@@ -2,12 +2,12 @@
 
 const Contact = () => {
   return (
-    <div className="container mx-auto p-6 text-white justify-contentcenter">
+    <div className="container mx-auto p-6 text-white flex flex-col h-screen items-center justify-center">
     <h1 className="text-3xl md:text-4xl font-semibold mb-6">Contact Me</h1>
-    <div className="flex flex-col items-center md:flex-row">
-      <div className="md:w-1/2 md:pr-6">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4">Contact Information</h2>
-        <p className="mb-2">
+    <div className="flex flex-col items-center md:flex-row ">
+      <div className="md:w-full w-1/2">
+        <h2 className="text-md md:text-2xl  mb-4">Contact Information</h2>
+        <p className="mb-2 ">
           <strong>Email:</strong> ashishpandey46209@gmail.com
         </p>
         <p className="mb-4">
@@ -18,7 +18,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-           my linkedin profile
+                   my linkedin profile
           </a>
         </p>
         <p className="mb-4">
@@ -30,6 +30,17 @@ const Contact = () => {
             className="text-blue-500 hover:underline"
           >
             my instagram profile
+          </a>
+        </p>
+        <p className="mb-4">
+          <strong>Twitter:</strong>{' '}
+          <a
+            href="https://twitter.com/Ashishp7774"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            my twitter profile
           </a>
         </p>
       </div>
